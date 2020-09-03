@@ -1,6 +1,6 @@
 import React from "react";
 import LeafletMap from './LeafletMap';
-import { LayerContextProvider } from "./context/LayerContex";
+import { LayerContextProvider } from "./context/LayerContext";
 import { ParanoidMap } from "./ParanoidButton";
 import { Container } from "./Container";
 import { Hero } from "./Hero";
@@ -22,8 +22,8 @@ const App:React.FC = () => {
       <Footer>
         <Text>❤️</Text>
       </Footer>
+      <ParanoidMap />
       <LayerContextProvider>
-         <ParanoidMap />
         <LeafletMap />
       </LayerContextProvider> 
     </Container>
