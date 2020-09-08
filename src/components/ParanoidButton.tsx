@@ -19,7 +19,8 @@ export const ParanoidMap = () => {
 
 // TODO: Handle Error in case server is down
 async function fetchContacts() {
-    const response = await axios.get("http://localhost:4000/?t=120&long=40.444444&lat=-10");
+    // const response = await axios.get("http://localhost:4000/stay/?t=120&long=40.444444&lat=-10");
+    const response = await axios.get("http://localhost:4000/walk");
     console.log(response)
     return response;
 }
